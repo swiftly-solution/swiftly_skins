@@ -29,5 +29,5 @@ function GetPluginName()
 end
 
 function GetPluginWebsite()
-    return ""
+    return "https://github.com/swiftly-solution/swiftly_skins"
 end
