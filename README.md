@@ -18,6 +18,12 @@
 
 ![Downloads](https://img.shields.io/github/downloads/swiftly-solution/swiftly_skins/total) ![Contributors](https://img.shields.io/github/contributors/swiftly-solution/swiftly_skins?color=dark-green) ![Issues](https://img.shields.io/github/issues/swiftly-solution/swiftly_skins) ![License](https://img.shields.io/github/license/swiftly-solution/swiftly_skins) 
 
+> [!CAUTION]
+> This plugin is not following the CS2 Server Guidelines. Use it at your own risk.
+> Usage of this plugin may result in a GSLT ban.
+> CS2 Server Guidelines: [Click](https://blog.counter-strike.net/index.php/server_guidelines/)
+> We **DO NOT SUPPORT** the usage of a plugin which is not following the Server Guidelines.
+
 ### Installation 👀
 
 1. Download the newest [release](https://github.com/swiftly-solution/swiftly_skins/releases).
