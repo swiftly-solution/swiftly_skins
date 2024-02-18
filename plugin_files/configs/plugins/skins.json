@@ -1,0 +1,16 @@
+{
+	"skin_commands": [
+		"ws",
+		"weaponskins",
+		"skins",
+		"skin",
+		"knife",
+		"glove",
+		"agent",
+		"musickit",
+		"music",
+		"graffiti"
+	],
+	"prefix": "[{green}Swiftly{default}]",
+	"skins_website": "https://testskins.swiftlycs2.net/"
+}
