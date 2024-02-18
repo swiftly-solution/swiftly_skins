@@ -20,8 +20,11 @@
 
 > [!CAUTION]
 > This plugin is not following the CS2 Server Guidelines. Use it at your own risk.
+>
 > Usage of this plugin may result in a GSLT ban.
+>
 > CS2 Server Guidelines: [Click](https://blog.counter-strike.net/index.php/server_guidelines/)
+>
 > We **DO NOT SUPPORT** the usage of a plugin which is not following the Server Guidelines.
 
 ### Installation 👀
