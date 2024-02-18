@@ -45,6 +45,8 @@
 ```
 (!) Don't forget to replace the `...` with the actual values !!
 
+4. Install the [Latest release of the Website](https://github.com/swiftly-solution/swiftly_skins_web/releases/latest) so that you can change your skins.
+
 ### Configuring the plugin 🧐
 
 * After installing the plugin, you need to change the prefix from `addons/swiftly/configs/plugins` (optional) and if you want, you can change the messages from `addons/swiftly/translations`.
