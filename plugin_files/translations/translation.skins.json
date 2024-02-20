@@ -1,14 +1,17 @@
 {
 	"website": {
 		"en": "%s Skins Website: %s",
-		"ro": "%s Site Skin-uri: %s"
+		"ro": "%s Site Skin-uri: %s",
+		"ua": "%s Веб сайт щоб обрати скіни: %s"
 	},
 	"reset_success": {
 		"en": "%s All items has been resynced succesfully. Now you have a cooldown of 120 seconds between command uses.",
-		"ro": "%s Toate itemele au fost resincronizate cu succes. Acum trebuie să aștepți 120 de secunde pentru a putea reexecuta comanda."
+		"ro": "%s Toate itemele au fost resincronizate cu succes. Acum trebuie să aștepți 120 de secunde pentru a putea reexecuta comanda.",
+		"ua": "%s Усі елементи успішно синхронізовані. Тепер у вас є 120 секунд на відновлення між використанням команд."
 	},
 	"reset_cooldown": {
 		"en": "%s You can use the sync command again in %d seconds.",
-		"ro": "%s Poți folosi comanda de resincronizare dinnou în %d secunde."
+		"ro": "%s Poți folosi comanda de resincronizare dinnou în %d secunde.",
+		"ua": "%s Ви зможете використати команду синхронізації знову через %d секунд."
 	}
 }
