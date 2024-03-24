@@ -3,7 +3,10 @@ function SyncPlayerWithDB(pl)
     local player = pl
     local steamid = tostring(player:GetSteamID())
     local result = db:Query("select equippedSkins, skinsdata from sw_skins_users where steamid = '".. steamid .."'")
-    if #result == 0 then return end
+    if #result == 0 then
+        playerSkinsData[steamid] = { skins = {}, data = {} }
+        return
+    end
 
     local equippedSkins = json.decode(result[1].equippedSkins)
     local skinsdata = json.decode(result[1].skinsdata)
