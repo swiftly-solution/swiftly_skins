@@ -40,7 +40,7 @@ function CheckPlayerConnection(pl)
     end
 end
 
-function CheckPlayerConnection()
+function CheckPlayersConnection()
     for i=0,playermanager:GetPlayerCap()-1,1 do 
         local player = GetPlayer(i)
         if not player then goto check_continue end
@@ -57,7 +57,7 @@ function RegisterLastConnection(pl)
     db:Query("update sw_skins_users set lastConnection = '".. currentTime .."' where steamid = '".. steamid .."'")
 end
 
-function RegisterLastConnection()
+function RegisterLastConnections()
     for i=0,playermanager:GetPlayerCap()-1,1 do 
         local player = GetPlayer(i)
         if not player then goto register_continue end

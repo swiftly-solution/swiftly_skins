@@ -14,6 +14,8 @@ events:on("OnPluginStart", function()
     PreloadMusic()
 
     SyncPlayersWithDB()
+    CheckPlayersConnection()
+    RegisterLastConnections()
 end)
 
 function GetPluginAuthor()
