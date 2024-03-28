@@ -5,6 +5,8 @@ events:on("OnPluginStart", function()
     db = Database("skin_changer")
     if db:IsConnected() == 0 then return end
 
+    VerifyDB()
+
     LoadData("agents")
     LoadData("musickits")
     LoadData("graffiti")
@@ -14,6 +16,8 @@ events:on("OnPluginStart", function()
     PreloadMusic()
 
     SyncPlayersWithDB()
+    CheckPlayersConnection()
+    RegisterLastConnections()
 end)
 
 function GetPluginAuthor()
