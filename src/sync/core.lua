@@ -68,3 +68,29 @@ function RegisterLastConnections()
         ::register_continue::
     end
 end
+
+function VerifyDB()
+    if not db then return end
+    local result = db:Query("SHOW TABLES LIKE 'sw_skins_users'")
+    if #result == 0 then
+        db:Query("CREATE TABLE sw_skins_users (steamid VARCHAR(255), equippedSkins TEXT, skinsdata TEXT, lastConnection INT)")
+    else
+        local columns = db:Query("SHOW COLUMNS FROM sw_skins_users")
+        local columnsNames = {}
+        for i=1,#columns,1 do
+            table.insert(columnsNames, columns[i].Field)
+        end
+        if not table.contains(columnsNames, "steamid") then
+            db:Query("ALTER TABLE sw_skins_users ADD COLUMN steamid VARCHAR(255)")
+        end
+        if not table.contains(columnsNames, "equippedSkins") then
+            db:Query("ALTER TABLE sw_skins_users ADD COLUMN equippedSkins TEXT")
+        end
+        if not table.contains(columnsNames, "skinsdata") then
+            db:Query("ALTER TABLE sw_skins_users ADD COLUMN skinsdata TEXT")
+        end
+        if not table.contains(columnsNames, "lastConnection") then
+            db:Query("ALTER TABLE sw_skins_users ADD COLUMN lastConnection INT")
+        end
+    end
+end
