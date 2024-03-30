@@ -12,5 +12,6 @@
 		"graffiti"
 	],
 	"prefix": "[{green}Swiftly{default}]",
-	"skins_website": "https://testskins.swiftlycs2.net/"
+	"skins_website": "https://testskins.swiftlycs2.net/",
+	"daysToErase": 30
 }
