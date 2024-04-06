@@ -2,16 +2,49 @@
 	"website": {
 		"en": "%s Skins Website: %s",
 		"ro": "%s Site Skin-uri: %s",
-		"ua": "%s Веб сайт щоб обрати скіни: %s"
+		"ua": "%s Веб сайт щоб обрати скіни: %s",
+		"es": "%s Sitio web de skins: %s"
 	},
 	"reset_success": {
 		"en": "%s All items has been resynced succesfully. Now you have a cooldown of 120 seconds between command uses.",
 		"ro": "%s Toate itemele au fost resincronizate cu succes. Acum trebuie să aștepți 120 de secunde pentru a putea reexecuta comanda.",
-		"ua": "%s Усі елементи успішно синхронізовані. Тепер у вас є 120 секунд на відновлення між використанням команд."
+		"ua": "%s Усі елементи успішно синхронізовані. Тепер у вас є 120 секунд на відновлення між використанням команд.",
+		"es": "%s Todos los elementos han sido resincronizados con éxito. Ahora tienes un tiempo de espera de 120 segundos entre usos de comandos."
 	},
 	"reset_cooldown": {
 		"en": "%s You can use the sync command again in %d seconds.",
 		"ro": "%s Poți folosi comanda de resincronizare dinnou în %d secunde.",
-		"ua": "%s Ви зможете використати команду синхронізації знову через %d секунд."
+		"ua": "%s Ви зможете використати команду синхронізації знову через %d секунд.",
+		"es": "%s Puedes usar el comando de sincronización de nuevo en %d segundos."
+	},
+	"usage_delskins": {
+		"en": "%s Usage: !delskins <steamid>",
+		"ro": "%s Folosește: !delskins <steamid>",
+		"ua": "%s Використання: !delskins <steamid>",
+		"es": "%s Uso: !delskins <steamid>"
+	},
+	"no_access": {
+		"en": "%s {LIGHTRED}You don't have access to this command.",
+		"ro": "%s {LIGHTRED}Nu ai acces la această comandă.",
+		"ua": "%s {LIGHTRED}У вас немає доступу до цієї команди.",
+		"es": "%s {LIGHTRED}No tienes acceso a este comando."
+	},
+	"invalid_steamid": {
+		"en": "%s {LIGHTRED}Invalid SteamID, please use a valid SteamID64 (ex: 76561197960287930).",
+		"ro": "%s {LIGHTRED}SteamID invalid, folosește un SteamID64 valid (ex: 76561197960287930).",
+		"ua": "%s {LIGHTRED}Невірний SteamID, будь ласка, використовуйте дійсний SteamID64 (наприклад: 76561197960287930).",
+		"es": "%s {LIGHTRED}SteamID inválido, por favor usa un SteamID64 válido (ej: 76561197960287930)."
+	},
+	"steamid_not_found": {
+		"en": "%s {LIGHTRED}Skins for {LIME}'%s'{LIGHTRED} not found.",
+		"ro": "%s {LIGHTRED}Skin-urile pentru {LIME}'%s'{LIGHTRED} nu au fost găsite.",
+		"ua": "%s {LIGHTRED}Скіни для {LIME}'%s'{LIGHTRED} не знайдені.",
+		"es": "%s {LIGHTRED}Skins para {LIME}'%s'{LIGHTRED} no encontrados."
+	},
+	"steamid_deleted": {
+		"en": "%s {DARKRED}Skins for {LIME}'%s'{DARKRED} have been deleted.",
+		"ro": "%s {DARKRED}Skin-urile pentru {LIME}'%s'{DARKRED} au fost șterse.",
+		"ua": "%s {DARKRED}Скіни для {LIME}'%s'{DARKRED} були видалені.",
+		"es": "%s {DARKRED}Skins para {LIME}'%s'{DARKRED} han sido eliminados."
 	}
 }

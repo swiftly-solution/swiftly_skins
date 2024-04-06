@@ -80,17 +80,26 @@ function VerifyDB()
         for i=1,#columns,1 do
             table.insert(columnsNames, columns[i].Field)
         end
-        if not table.contains(columnsNames, "steamid") then
+        if not tableContains(columnsNames, "steamid") then
             db:Query("ALTER TABLE sw_skins_users ADD COLUMN steamid VARCHAR(255)")
         end
-        if not table.contains(columnsNames, "equippedSkins") then
+        if not tableContains(columnsNames, "equippedSkins") then
             db:Query("ALTER TABLE sw_skins_users ADD COLUMN equippedSkins TEXT")
         end
-        if not table.contains(columnsNames, "skinsdata") then
+        if not tableContains(columnsNames, "skinsdata") then
             db:Query("ALTER TABLE sw_skins_users ADD COLUMN skinsdata TEXT")
         end
-        if not table.contains(columnsNames, "lastConnection") then
+        if not tableContains(columnsNames, "lastConnection") then
             db:Query("ALTER TABLE sw_skins_users ADD COLUMN lastConnection INT")
         end
     end
+end
+
+function tableContains(tab, element)
+    for _, value in pairs(tab) do
+        if value == element then
+            return true
+        end
+    end
+    return false
 end
