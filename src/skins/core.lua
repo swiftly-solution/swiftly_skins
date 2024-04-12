@@ -66,6 +66,17 @@ events:on("OnWeaponSpawned", function(playerid, weaponid)
     local weaponname = custom_names[weapon:GetID()] or weapon:GetName()
     local steamid = tostring(player:GetSteamID())
 
+    print("Weapon name is: " .. weaponname)
+    print("Weapon silencer is: " .. weapon:GetSilencerType())
+
+    if weaponname == "weapon_m4a1" and weapon:GetSilencerType() ==  1 then
+        weaponname = "weapon_m4a1_silencer"
+    end
+
+    if weaponname == "weapon_hkp2000" and weapon:GetSilencerType() == 1 then
+        weaponname = "weapon_usp_silencer"
+    end
+
     if playerSkinsData[steamid] then
         for i=1,#playerSkinsData[steamid].skins do 
             local skin = playerSkinsData[steamid].skins[i]
