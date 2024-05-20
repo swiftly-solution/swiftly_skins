@@ -8,7 +8,7 @@ function UpdatePin(player)
             local pin = playerSkinsData[steamid].skins[i]
             local pinID = string.match(pin, "^pin%-(%d+)$")
             if data["pins"][pin] then
-
+                player:SetPin(tonumber(pinID))
                 break
             end
         end
