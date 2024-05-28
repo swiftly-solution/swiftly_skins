@@ -14,8 +14,8 @@ commands:Register("wp", function(playerid, args, argc, silent)
     cooldowns[steamid] = os.time() + 120
 
     SyncPlayerWithDB(player)
-    UpdateSkins(player, WeaponSlot.Rifle)
-    UpdateSkins(player, WeaponSlot.Pistol)
+    UpdateSkins(player, gear_slot_t.GEAR_SLOT_RIFLE)
+    UpdateSkins(player, gear_slot_t.GEAR_SLOT_PISTOL)
     UpdateKnife(player)
     UpdateMusicKit(player)
     CheckGloves(player)

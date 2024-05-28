@@ -4,7 +4,7 @@ function UpdateKnife(player)
     local steamid = tostring(player:GetSteamID())
     local team = (player:team():Get() == TEAM_T and "_t" or "")
 
-    local weap = player:weapons():GetWeaponFromSlot(WeaponSlot.Knife)
+    local weap = player:weapons():GetWeaponFromSlot(gear_slot_t.GEAR_SLOT_KNIFE)
     if weap:Exists() == 1 then
         weap:Remove()
     end

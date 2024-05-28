@@ -25,7 +25,7 @@ custom_names = {
 
 function UpdateSkins(player, slot)
     local weapon = player:weapons():GetWeaponFromSlot(slot)
-    local currentweapon = player:weapons():GetWeaponFromSlot(WeaponSlot.CurrentWeapon)
+    local currentweapon = player:weapons():GetWeaponFromSlot(14)
     local active = (weapon:GetID() == currentweapon:GetID())
     local weaponname = custom_names[weapon:GetID()] or weapon:GetName()
 
@@ -103,6 +103,6 @@ events:on("OnPlayerSpawn", function(playerid)
     local player = GetPlayer(playerid)
     if not player then return end
 
-    UpdateSkins(player, WeaponSlot.Rifle)
-    UpdateSkins(player, WeaponSlot.Pistol)
+    UpdateSkins(player, gear_slot_t.GEAR_SLOT_RIFLE)
+    UpdateSkins(player, gear_slot_t.GEAR_SLOT_PISTOL)
 end)
